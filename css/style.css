@@ -1,0 +1,336 @@
+    /* ____________________ */
+    /* Style for navy2.html */
+
+    html {
+        box-sizing: border-box;
+      }
+
+    body{
+        background-color: #000;
+        background-image: url("https://colonelvyas.org/trial/assets/img/wave_bg.webp");
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey; 
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: rgba(37, 37, 255, 0.322); 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(1, 1, 160, 0.322); 
+    }
+
+
+
+    /* Background video */
+
+
+    /*.wrap { position: relative; }
+
+    .vid, .wrapcontent {
+      position: absolute;
+      width: 100%;
+      mask-repeat: repeat-y;
+      
+    }
+    .vid { z-index: 1; }
+    .wrapcontent { z-index: 2; }*/
+
+      
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+        border-radius: 15px;
+      }
+      
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+
+      }
+      
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        background-color: rgb(236, 236, 236);
+        color: black;
+        text-align: center;
+        border-radius: 15px;
+      }
+
+      .card img{
+        border-radius: 7px;
+        transition: transform .2s;
+      }
+
+      .card img:hover {
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1); 
+      }
+      
+      .container {
+        padding: 0 8px;
+        color: #000;
+      }
+
+      .container h2{
+        padding-bottom: 2px;
+      }
+
+      .container .ship-class{
+        color: rgb(70, 70, 70);
+        font-size: 19px;
+      }
+      
+      .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      .title {
+        color: rgb(70, 70, 70);
+        font-size: 22px;
+        font-weight: bold;
+        padding: 5px;
+      }
+      
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #2c212c;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        text-decoration: none;
+        border-radius: 12px;
+      }
+      
+      .button:hover {
+        background-color: #555;
+      }
+
+      .text-block {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .category-head{
+        margin: 10px 0;
+    }
+    .category-head .catclass{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .category-title{
+        flex: auto;
+        justify-content:center;
+        text-align: center;
+        background: #333333;
+        padding: 4px;
+        color: #fff;
+        margin: 2px;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+    .category-title:hover{
+        opacity: 0.7;
+    }
+    .category-title p{
+        justify-content: center;
+    }
+    .category-title span{
+        color: #222;
+    }
+    .main-container{
+        width: 90vw;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+    
+    .box {
+        width: 40%;
+        margin: 0 auto;
+        background: rgba(255,255,255,0.2);
+        padding: 35px;
+        border: 2px solid #fff;
+        border-radius: 20px/50px;
+        background-clip: padding-box;
+        text-align: center;
+      }
+      
+      
+      .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 0.5s;
+        visibility: hidden;
+        opacity: 0;
+      }
+      .overlay:target {
+        visibility: visible;
+        opacity: 1;
+      }
+      
+      .popup {
+        margin: 15px auto;
+        padding: 5px;
+        background: #eeeeee;
+        border-radius: 15px;
+        width: 35%;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .popup h2 {
+        margin-bottom: 4px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+        color: #272727;
+        font-family: Tahoma, Arial, sans-serif;
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 650px) {
+
+        .popup {
+            margin: auto;
+            padding: 5px;
+            background: #f1efef;
+            border-radius: 15px;
+            width: 90%;
+            position: relative;
+            transition: all 0.5s ease-in-out;
+          }
+      }
+
+      .popup img {
+        width: 100%;
+      }
+    
+    
+      .popup .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+      }
+      .popup .close:hover {
+        color: #06D85F;
+      }
+      .popup .content {
+        max-height: 30%;
+        overflow: auto;
+        color: rgb(29, 29, 29);
+      }
+    
+    
+    
+    ul.a {
+        list-style-type: circle;
+      }
+
+      .c1{
+        background-color: rgb(194, 255, 198);
+      }
+
+      .c2{
+        background-color: rgb(251, 255, 194);
+      }
+
+      .c3{
+        background-color: rgb(253, 231, 231);
+      }
+
+      .c4{
+        background-color: rgb(232, 231, 253);
+      }
+
+      .c5{
+        background-color: rgb(249, 221, 221);
+      }
+
+      .c6{
+        background-color: rgb(250, 249, 179);
+      }/**/
+
+      .c7{
+        background-color: rgb(179, 250, 185);
+      }
+
+      .c8{
+        background-color: #ffc4da;
+      }
+
+      .c9{
+        background-color: rgb(242, 206, 253);
+      }
+
+      .c10{
+        background-color: rgb(205, 255, 186);
+      }
+
+      .c11{
+        background-color: rgb(229, 255, 167);
+      }
+
+      .c12{
+        background-color: rgb(250, 189, 237);
+      }
+
+      .c13{
+        background-color: rgb(215, 167, 253);
+      }
+
+      .c14{
+        background-color: rgb(190, 167, 253);
+      }
+
+      .c15{
+        background-color: rgb(253, 167, 210);
+      }
+
+      .c16{
+        background-color: rgb(167, 226, 253);
+      }
+      
+
+
+
+  
